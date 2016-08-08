@@ -1,0 +1,40 @@
+.scroll-region
+{
+  background: @light-gray;
+}
+.account-sidebar{
+  background: @account-sidebar-bg;
+  &.scroll-region:after {
+    content: "";
+    background: @account-sidebar-bg-pattern;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;   
+  }
+  .nylas-outline-view {
+    & .heading{
+    color:rgba(0,0,0,0.8);
+    font-weight: bolder;
+    }
+    & .item .item-count-box.alt-count{
+      background: gray;
+      color:white !important;
+    }
+  }
+  .item.selected{
+    background: @account-sidebar-selected-item-bg;
+    color:white !important;
+    margin-left: -20px;
+    padding-left: 20px;
+    border-right: solid 4px rgba(0,0,0,0.4);
+    font-weight: bold; 
+    
+    & img.content-mask{
+      background-color:white !important;
+    }
+  }
+
+}

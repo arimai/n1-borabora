@@ -1,0 +1,14 @@
+{
+  "name": "BoraBora",
+  "title": "BoraBora",
+  "displayName": "BoraBora",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "Nylas colors inspired theme for N1",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "private": true
+}
+

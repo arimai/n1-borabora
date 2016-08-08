@@ -1,0 +1,32 @@
+.sheet-toolbar{
+	border-bottom: none !important;
+	.sheet-toolbar-container{
+		background: @sheet-toolbar-bg;
+		color:white;
+	}
+	& .selection-bar .absolute{
+		background-color: @midnight-gray !important;
+		border-left:none;
+		border-right:none;	
+		& .inner .centered{
+			color:white;
+		}
+	}
+	& .btn-toolbar:hover{
+		background: @sheet-toolbar-btn-hover;
+	}
+	& .item-back {
+		& .item-back-title{
+			color:@pink;
+		}
+		& img.content-mask{
+			background-color:@bright-green;
+		}
+	}
+	.btn-icon img.content-mask{
+		background-color:@bright-green;
+		&:hover{
+			background-color: white;
+		}
+	}	
+}

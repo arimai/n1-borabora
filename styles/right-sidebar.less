@@ -1,0 +1,47 @@
+.column-MessageListSidebar{
+	background: @right-sidebar-bg;
+	&:after{
+		content: "";
+	    background: @right-sidebar-bg-pattern; 
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    z-index: -1;  
+	}
+ }
+//contact-card
+.sidebar-section {
+	margin : 15px;
+}
+
+.related-threads{
+	background : @right-sidebar-contact-card-related-threads-bg;
+	color: white !important;
+	border-top:none;
+	& .timestamp{
+		color: @light-pink !important;
+	}
+
+	& .toggle{
+		color: @light-pink;
+ 		cursor: pointer;
+	}
+
+	& .related-thread{
+		color: white;
+		&:hover{
+			background: @right-sidebar-contact-card-related-threads-hover-bg;
+			cursor: pointer;
+		}
+	}
+}
+.selectable{
+	color: @pink;
+	font-weight: bold;
+}
+.notifications-sticky .notifications-sticky-item{
+	border-bottom: none;
+	background: @darker-pink;
+}

@@ -1,0 +1,83 @@
+.list-container{
+	& .list-item{
+		// border-bottom: none;
+		&.next-is-selected{
+			border-bottom : none;
+		}	
+		&.selected{
+			background : @thread-list-item-focused-bg;
+			border-bottom:solid 1px @light-gray;
+			&:hover{
+				background-color:@lightest-blue !important;
+			}
+			& div.personal-level-icon img{
+			   -webkit-filter : @filter-full-bright;
+			}
+		}
+		&.focused{
+			background: @thread-list-item-focused-bg;
+			color: @light-black !important;
+			border-right: 3px solid @thread-list-item-focused-border-bg;
+			border-bottom: none!important;
+			cursor: pointer !important;
+			&:hover{
+				background: transparent!important;
+			}
+			& div.personal-level-icon img{
+            	-webkit-filter : @filter-full-bright;
+ 			}
+		}
+	}
+}
+.list-tabular .list-tabular-item{
+	&.keyboard-cursor{
+		border-right : 4px solid @awesome-pink;
+		border-left:none;
+	}	
+	&.selected .checkmark .inner{
+		background-color : @bright-green;
+	}
+}
+.thread-list{
+	& .list-item.selected:hover .list-column-HoverActions .inner{
+		background-image: @list-selected-hover-gradient;
+	}
+	& .focused{
+		& .thread-icon{
+			-webkit-filter: @filter-full-bright;
+		}
+		& .mail-label, .draft-list .focused .mail-label{
+			background: @bright-green !important; 
+			color: white !important;
+		    -webkit-filter: @filter-full-bright;
+		}
+		& .timestamp, .draft-list .focused .timestamp{
+			color: @awesome-pink;
+			opacity: 1;
+		}
+	}
+	/** to avoid the blue background when an item is selected in single layout
+	   and user selects double layout **/
+	&.handler-split .list-item.selected{
+		background: @light-ghee;
+		color:inherit;
+		border-bottom:solid 1px @light-gray !important;
+
+		& .mail-label{
+			//restoring to defaults
+			background-color: rgb(243,226,202) !important;
+			box-shadow: rgb(194, 135, 45) 0px 0px 1px inset, rgba(255, 255, 255, 0.498039) 0px 1px 1px inset, rgba(255, 255, 255, 0.498039) 0px 0.5px 0px !important;		
+			color: rgb(130, 95, 43) !important;
+			-webkit-filter: @filter-full-bright !important;
+		}
+		& .mail-important-icon,& .thread-icon{
+			-webkit-filter: @filter-full-bright !important;
+		}
+	}
+}
+
+.mail-important-icon.enabled.active{
+	background-image: @thread-list-important-icon-bg;
+    -webkit-filter: @filter-full-bright;
+}
+
