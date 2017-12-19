@@ -1,6 +1,6 @@
 
 # BoraBora N1 Theme
-A bright theme for [Nylas N1](http://www.nylas.com/n1), the extensible, open-source email client.
+A bright theme for [Nylas N1](https://github.com/nylas/nylas-mail), the extensible, open-source email client.
 
 
 ![Screenshot](/images/screenshot.png)
